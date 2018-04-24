@@ -242,7 +242,7 @@ rownames(mdind_nb_estimates) <- c("(Constante)",
                                   "CDMX",
                                   "periodo: 2000-12 - 2005-07",
                                   "periodo: Post-2005-07",
-                                  "CDMX*AMLO",
+                                  "CDMX*2000-12 - 2005-07 (efecto AMLO)",
                                   "CDMX*Post-2005-07",
                                   "Varianza: Entidad",
                                   "1/sigma")
