@@ -4,3 +4,6 @@ DID_AMLO.md
 DID_AMLO_cache/
 DID_AMLO_files/
 homicidiosCDMX.Rproj
+*.docx
+*.pdf
+*.tex

@@ -1,12 +1,14 @@
 ---
 title: "¿AMLO redujo los homicidios en la CDMX?"
 author: "Patricio R. Estevez Soto"
-email: "patricio.estevez.14@ucl.ac.uk"
-twitter: "@prestevez"
 date: "23/04/2018"
 output:
-    html_document:
-pandoc_args: "--smart"
+  pdf_document:
+      keep_tex: true
+  html_document: null
+pandoc_args: --smart
+email: patricio.estevez.14@ucl.ac.uk
+twitter: '@prestevez'
 ---
 
     ```{r setup, include=FALSE}
@@ -237,6 +239,8 @@ sum_mdind_nb <- summary(mdind_nb)
 ```{r didresults, echo=FALSE, include=TRUE}
 mdind_nb_estimates <- confint(mdind_nb)
 mdind_nb_estimates <- mdind_nb_estimates[,c(3,1:2)]
+
+colnames(mdind_nb_estimates)[1] <- "Estimados"
 
 rownames(mdind_nb_estimates) <- c("(Constante)",
                                   "CDMX",
