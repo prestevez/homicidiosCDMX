@@ -7,3 +7,5 @@ homicidiosCDMX.Rproj
 *.docx
 *.pdf
 *.tex
+cache/
+figure/
